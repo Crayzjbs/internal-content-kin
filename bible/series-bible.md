@@ -32,7 +32,7 @@ Re-hook every 60 to 90 seconds: a reveal, a twist, a contrast, or a new characte
 - Motion graphics and 3D made in-house are the signature. Use them for timelines, maps, numbers, org charts, money flows, and recreating moments we have no footage of.
 - Internet B-roll and clips are evidence: show the actual post, video, headline, or document being discussed.
 - NO AI-generated visuals, ever.
-- Consistent look: one font system, one color palette, recurring graphic elements (to be set by Justine in the KIN design kit).
+- Consistent look: one font system, one color palette, recurring graphic elements (to be set by Justine in brand/design-kit.md).
 
 ## Footage rules
 - Use clips only to comment on, criticize, or explain them. Never let a clip play just as entertainment.
