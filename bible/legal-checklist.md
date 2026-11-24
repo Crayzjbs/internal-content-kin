@@ -34,7 +34,11 @@ Laws include: RA 7610 (child abuse), RA 9262 (violence against women and childre
 ## 5. Copyright and footage
 - Use only footage and images that are licensed, public domain, KIN-owned, or clearly within fair use after review.
 - Credit sources on screen or in the description.
-- Label AI-generated shots of real people or real events as "reconstruction".
+- Internet clips are used only as commentary: keep them short, comment on them in narration or graphics, and record the source link. Long or uncommented clips are a copyright and Content ID risk.
+- No AI-generated visuals of any kind. Moments with no footage are recreated with KIN-made motion graphics or 3D and labeled on screen as "recreation".
+
+## Subjects outside the Philippines
+- KIN publishes from the Philippines, but people in a story may live anywhere. Defamation and privacy rules where the subject lives, or where the events happened, may be stricter. Flag these and mark them [VERIFY] when unsure.
 
 ## 6. Platform policy (YouTube)
 - Graphic violence, real crime scene imagery, and detailed descriptions of harm can trigger age restriction or limited ads. Check YouTube's current policies before publishing, because they change.

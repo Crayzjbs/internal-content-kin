@@ -37,8 +37,10 @@ content-strategist (brief) > scriptwriter (dossier, script, VO script) > fact-ch
 - bible/: series-bible.md, voice-guide.md, source-standards.md, legal-checklist.md. Every agent reads series-bible.md and voice-guide.md before creative work.
 - strategy/: topic lists, briefs, calendars, analytics exports.
 - episodes/<slug>/: brief.md, dossier.md, script.md, vo-script.md, factcheck.md, copy.md, social.md.
-- social/: posting calendars, platform specs, weekly reports.
+- social/: posting calendars, platform-specs.md, weekly reports.
+- brand/: design-kit.md (fonts, colors, recurring graphics, templates). Read it before planning thumbnails, on-screen text, or motion graphics.
 - feedback/: one log per agent. Read your own log before every task and follow every rule in it.
+- drafts/: staging and old agent versions. Not live. See drafts/README.md.
 
 ## Handoff rule
 Every agent saves its output as a file in the right folder and ends with a short HANDOFF block: what was done, what is still open, and who works on it next.
