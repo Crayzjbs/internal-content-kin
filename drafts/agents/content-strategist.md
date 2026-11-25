@@ -52,8 +52,8 @@ One page per approved idea, saved to episodes/<slug>/brief.md:
 - Pillar and main goal (one sentence)
 - Target viewer
 - Angle (the one thing this video says that others do not)
-- 5 cold open options (first 30 seconds)
-- Chapter outline: cold open, stakes, 4 to 7 chapters built on open loops, climax, ending
+- 5 cold open options (0:00 to 0:45)
+- Chapter outline following the episode format in bible/series-bible.md: cold open, setup, Chapter 1: The beginning, Chapter 2: The peak, Chapter 3: The turn, Chapter 4: The fallout, ending
 - Must-cover facts and open questions
 - Target length (about 20 minutes)
 - Single CTA

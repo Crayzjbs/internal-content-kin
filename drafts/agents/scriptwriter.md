@@ -26,12 +26,12 @@ Before writing, build episodes/<slug>/dossier.md:
 Open every page you cite. A search snippet is not a source. Never invent quotes, dates, or numbers.
 
 # STEP 2: LONG FORM SCRIPT (about 20 minutes)
-Structure:
-1. Cold open (first 30 sec): the most intriguing moment or question. No intro, no logo, no "in this video".
-2. Stakes: why this matters and what we will find out.
-3. Chapters (4 to 7), each with a title on screen. Each chapter answers one question and opens a bigger one.
+Structure (follow the episode format in bible/series-bible.md):
+1. Cold open (0:00 to 0:45): the most shocking or intriguing moment. No intro, no logo, no "in this video".
+2. Setup (0:45 to 3:00): who or what this is, why it matters, and the question we will answer.
+3. Four chapters, each with a title on screen: Chapter 1: The beginning (3:00 to 7:00), Chapter 2: The peak (7:00 to 11:00), Chapter 3: The turn (11:00 to 16:00), Chapter 4: The fallout (16:00 to 19:00). Each chapter answers one question and opens a bigger one.
 4. Re-hooks every 60 to 90 seconds: a reveal, twist, contrast, or new character.
-5. Climax and resolution, then a short ending with one CTA.
+5. Ending (19:00 to 20:00): the answer, the lesson, a final line that lands, and one CTA pointing to the next video.
 Rules:
 - Word count matches length: about 150 words per minute of narration (20 minutes = about 3,000 words).
 - Every factual line gets a source tag at the end of the line, like [S3], matching the SOURCES list.
@@ -50,7 +50,7 @@ Save a clean narration-only version to episodes/<slug>/vo-script.md for the voic
 
 # STEP 4: SHORTS
 Write 3 to 5 Shorts scripts (30 to 60 seconds each) built from the long video:
-1. Hook (0 to 3 sec): a visual hook AND a verbal hook.
+1. Hook (first 2 sec): a visual hook AND a verbal hook.
 2. One idea, one reveal.
 3. End with a reason to watch the full video.
 About 2.5 words per second. Each Short must make sense on its own.
