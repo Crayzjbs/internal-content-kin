@@ -41,6 +41,7 @@ content-strategist (brief) > scriptwriter (dossier, script, VO script) > fact-ch
 - brand/: design-kit.md (fonts, colors, recurring graphics, templates). Read it before planning thumbnails, on-screen text, or motion graphics.
 - feedback/: one log per agent. Read your own log before every task and follow every rule in it.
 - drafts/: staging and old agent versions. Not live. See drafts/README.md.
+- hub/: the KIN Hub, a local dashboard that runs these agents for every channel (see hub/README.md). Other channels live in channels/<slug>/ with this same layout. Config: channels.json, agents.json, pipeline.json.
 
 ## Handoff rule
 Every agent saves its output as a file in the right folder and ends with a short HANDOFF block: what was done, what is still open, and who works on it next.

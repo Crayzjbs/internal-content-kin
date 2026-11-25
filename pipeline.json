@@ -1,0 +1,68 @@
+{
+  "stages": [
+    {
+      "id": "brief",
+      "label": "Brief",
+      "agent": "content-strategist",
+      "outputs": ["brief.md"],
+      "gate": true,
+      "prompt": "Write the episode brief for episode \"{title}\" (slug: {slug}, pillar: {pillar}).\nNotes from Justine: {notes}\nSave it to episodes/{slug}/brief.md."
+    },
+    {
+      "id": "script",
+      "label": "Script",
+      "agent": "scriptwriter",
+      "outputs": ["dossier.md", "script.md", "vo-script.md"],
+      "gate": true,
+      "prompt": "The brief for episode {slug} is approved. Build the research dossier, the long form script with Shorts, and the VO script. Save to episodes/{slug}/dossier.md, script.md and vo-script.md."
+    },
+    {
+      "id": "factcheck",
+      "label": "Fact-check",
+      "agent": "fact-checker",
+      "outputs": ["factcheck.md"],
+      "gate": true,
+      "freshThread": true,
+      "prompt": "Fact-check episodes/{slug}/script.md. Save the report to episodes/{slug}/factcheck.md."
+    },
+    {
+      "id": "fixes",
+      "label": "Script fixes",
+      "agent": "scriptwriter",
+      "outputs": ["script.md", "vo-script.md"],
+      "gate": true,
+      "optional": true,
+      "prompt": "Apply every fix in episodes/{slug}/factcheck.md to episodes/{slug}/script.md and vo-script.md. List what you changed."
+    },
+    {
+      "id": "production",
+      "label": "Voice and edit",
+      "agent": "human",
+      "description": "Voice actor records vo-script.md. Editors and motion designers cut the video.",
+      "gate": true
+    },
+    {
+      "id": "copy",
+      "label": "Copy",
+      "agent": "copywriter",
+      "outputs": ["copy.md"],
+      "gate": true,
+      "prompt": "The script for episode {slug} is final. Write the YouTube title options, description, pinned comment, tags, and Shorts captions. Save to episodes/{slug}/copy.md."
+    },
+    {
+      "id": "social",
+      "label": "Social plan",
+      "agent": "social-media-manager",
+      "outputs": ["social.md"],
+      "gate": true,
+      "prompt": "Copy for episode {slug} is approved. Adapt captions per platform, plan the posting calendar for the video and its Shorts, and suggest extra clips. Save the episode plan to episodes/{slug}/social.md."
+    },
+    {
+      "id": "publish",
+      "label": "Publish",
+      "agent": "human",
+      "description": "Justine approves and publishes the video, Shorts and posts.",
+      "gate": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "channels": [
+    {
+      "slug": "kin",
+      "name": "KIN",
+      "root": ".",
+      "youtubeHandle": "",
+      "color": "#e11d48",
+      "description": "Faceless long form story channel: Mysteries, Rise and fall, Business stories.",
+      "pillars": [
+        "Mysteries",
+        "Rise and fall",
+        "Business stories"
+      ]
+    }
+  ]
+}

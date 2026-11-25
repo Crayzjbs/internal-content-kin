@@ -1,0 +1,7 @@
+# KIN Hub
+.hub/
+hub/node_modules/
+hub/.next/
+hub/.env.local
+hub/next-env.d.ts
+hub/tsconfig.tsbuildinfo

@@ -1,0 +1,106 @@
+{
+  "agents": {
+    "content-strategist": {
+      "label": "Content Strategist",
+      "role": "Head of Content Strategy",
+      "effort": "high",
+      "purpose": "Decides what to make and why: scores topics, plans the slate and upload calendar, and writes episode briefs with packaging.",
+      "capabilities": [
+        "Topic scoring (7 factors, 24 of 35 to pass)",
+        "Competitor and audience research",
+        "Upload calendar and slate planning",
+        "Episode briefs with cold open options and chapter outline",
+        "10 titles and 3 thumbnail concepts per brief",
+        "Performance reviews from analytics"
+      ],
+      "inputs": ["Topic ideas or notes", "bible/series-bible.md, bible/voice-guide.md", "Past briefs, calendars and weekly reports in strategy/ and social/"],
+      "outputs": ["episodes/<slug>/brief.md", "strategy/calendar-<YYYY-MM>.md", "Topic scorecards"],
+      "quickActions": [
+        { "label": "Score topic ideas", "prompt": "Score these topic ideas with the topic scoring table and rank them:\n1. " },
+        { "label": "Find topic ideas", "prompt": "Research and propose 10 topic ideas across the three pillars. Score each one and recommend the top 3." },
+        { "label": "Plan upload calendar", "prompt": "Plan next month's upload calendar from the approved topics." },
+        { "label": "Performance review", "prompt": "Review this performance data and give the 3 changes for the next video:\n" }
+      ]
+    },
+    "scriptwriter": {
+      "label": "Scriptwriter",
+      "role": "Lead Scriptwriter",
+      "effort": "high",
+      "purpose": "Researches and writes the long form video for the edit and the voice actor, plus the 3 to 5 Shorts cut from it.",
+      "capabilities": [
+        "Research dossier with sourced timeline",
+        "About 20 minute script table with visual, text and sound cues",
+        "Clean VO script with pronunciation guide",
+        "3 to 5 Shorts scripts",
+        "Applies fact-check fixes"
+      ],
+      "inputs": ["episodes/<slug>/brief.md", "bible/ files", "episodes/<slug>/factcheck.md when fixing"],
+      "outputs": ["episodes/<slug>/dossier.md", "episodes/<slug>/script.md", "episodes/<slug>/vo-script.md"],
+      "quickActions": [
+        { "label": "Sharpen a brief", "prompt": "Review episodes/<slug>/brief.md and propose a sharper angle and cold open before writing." },
+        { "label": "Write a Short", "prompt": "Write 3 Shorts scripts (30 to 60 seconds) from episodes/<slug>/script.md." }
+      ]
+    },
+    "fact-checker": {
+      "label": "Fact-checker",
+      "role": "Independent Fact Checker",
+      "effort": "high",
+      "purpose": "Independently verifies every claim in a script, and flags legal, privacy, copyright and sensitivity risks before recording.",
+      "capabilities": [
+        "Claim extraction",
+        "Independent sourcing by tier",
+        "Verdicts: Verified, Partly true, Unverified, False, Rumor",
+        "Legal risk scan (Philippines and subject's country)",
+        "Sensitivity and visuals checks",
+        "PASS, PASS WITH FIXES or FAIL report"
+      ],
+      "inputs": ["episodes/<slug>/script.md (or a copy file)", "bible/source-standards.md, bible/legal-checklist.md"],
+      "outputs": ["episodes/<slug>/factcheck.md"],
+      "quickActions": [
+        { "label": "Check copy file", "prompt": "Fact-check the claims in episodes/<slug>/copy.md against your own sources." }
+      ]
+    },
+    "copywriter": {
+      "label": "Copywriter",
+      "role": "Copywriter",
+      "effort": "high",
+      "purpose": "Writes the words around each video: titles, description, chapters, pinned comment, tags and Shorts captions.",
+      "capabilities": [
+        "5 title options under 60 characters",
+        "Description with chapters, sources and credits",
+        "Pinned comment and 10 tags",
+        "3 caption options per Short",
+        "Community post teaser"
+      ],
+      "inputs": ["episodes/<slug>/brief.md", "Final script", "episodes/<slug>/factcheck.md (Verified claims only)"],
+      "outputs": ["episodes/<slug>/copy.md"],
+      "quickActions": [
+        { "label": "Title options", "prompt": "Write 10 more title options for episode <slug> and rank your top 3." },
+        { "label": "Community post", "prompt": "Write a community post teaser for the next video." }
+      ]
+    },
+    "social-media-manager": {
+      "label": "Social Media Manager",
+      "role": "Social Media Manager",
+      "effort": "high",
+      "purpose": "Gets each video and its Shorts seen: platform captions, posting calendar, clip picks, reply drafts and weekly analytics reports.",
+      "capabilities": [
+        "Platform spec sheet upkeep",
+        "Caption adaptation per platform",
+        "Posting calendar",
+        "Clip repurposing picks",
+        "Community reply drafts with escalation",
+        "Weekly analytics review",
+        "Trend watching"
+      ],
+      "inputs": ["episodes/<slug>/copy.md", "Latest calendar in strategy/", "Analytics exports or pasted comments"],
+      "outputs": ["social/calendar-<YYYY-MM>.md", "social/weekly-<YYYY-MM-DD>.md", "social/platform-specs.md", "episodes/<slug>/social.md"],
+      "quickActions": [
+        { "label": "Fill platform specs", "prompt": "Fill social/platform-specs.md from each platform's official help pages, with source links and today's date." },
+        { "label": "Draft replies", "prompt": "Draft replies to these comments (escalate anything on the escalation list):\n" },
+        { "label": "Weekly report", "prompt": "Write this week's analytics report from this data:\n" },
+        { "label": "Trend watch", "prompt": "Find formats or topics trending in our three pillars this month." }
+      ]
+    }
+  }
+}
